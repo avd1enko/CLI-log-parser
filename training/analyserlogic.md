@@ -17,3 +17,8 @@ if args.errors_only:
 if args.methods:
     analyzers.append(MethodCounter())
 ```
+Список анализаторов
+1) Error Analyzer (--errors)
+2) Method Analyzer (--methods)
+3) Path heatmap Analyzer (--paths)
+4) Time heatmap Analyzer (--timemap)

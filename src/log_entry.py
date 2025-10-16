@@ -1,4 +1,5 @@
 class LogEntry:
+    """Represents a single log entry as an object with its own attributes and methods."""
     def __init__(self, ip, time, method, path, status, size, referrer, user_agent):
         self.ip = ip
         self.time = time

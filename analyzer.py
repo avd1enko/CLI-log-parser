@@ -6,12 +6,8 @@ def error_log(list_log_entry: list[LogEntry]):
     return [entry for entry in list_log_entry if entry.is_error()]
 
 
-def get_method_log(list_log_entry: list[LogEntry]):
-    return [entry for entry in list_log_entry if entry.method == "GET"]
-
-
-def post_method_log(list_log_entry: list[LogEntry]):
-    return [entry for entry in list_log_entry if entry.method == "POST"]
+def method_log(list_log_entry: list[LogEntry], method: str):
+    return [entry for entry in list_log_entry if entry.method == method]
 
 
 def path_heatmap_log(list_log_entry: list[LogEntry]):

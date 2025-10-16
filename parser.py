@@ -3,7 +3,7 @@ from log_enrty import LogEntry
 import re
 
 
-def parse(line: str):
+def parse_log(line: str):
     pattern = re.compile(
         r'(?P<ip>\d+\.\d+\.\d+\.\d+) - - \[(?P<time>.*?)] "(?P<method>\w+) (?P<path>.*?) HTTP/1.1" (?P<status>\d+) (?P<size>\d+) "(?P<referrer>.*?)" "(?P<user_agent>.*?)"')
     match = pattern.match(line)
